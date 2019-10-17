@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Comparative Historical Facts</title>
+    <script src="..\ComparativeHistoricalWebsite\Scripts\jquery-3.4.1.min.js"></script>
+    <script src="..\ComparativeHistoricalWebsite\Scripts\knockout-3.5.0.js"></script>
+    <script src="..\ComparativeHistoricalWebsite\Scripts\bootstrap.min.js"></script>
+    <link rel="stylesheet" href="..\ComparativeHistoricalWebsite\Styles\bootstrap.min.css">
+    <link rel="stylesheet" href="..\ComparativeHistoricalWebsite\Styles\MyStyles.css">
+</head>
+
+<body>
+    <div class="container-fluid mx-2 p-5">
+        <div class="container">
+            <h3 class="text-center">FAMOUS HISTORICAL EVENTS</h3>
+        </div>
+
+        <div class="my-3 p-2  border rounded">
+            This table consists of a list of historical events seen in the perspective of Gandhi's life and death.
+            Each event in history is compared to the years of Gandhi's life.
+
+            <br>
+            <br>
+
+            While we still remember Gandhi to this day, few realize how different the world was when he was alive. My
+            goal is
+            to put these events into perspective so that a new and more enlightening picture of how the world
+            was during these old times emerges.
+
+            <br>
+            <br>
+
+            Some of what you read may indeed surprise you!
+        </div>
+
+        <div class="my-4">
+            <table class="table table-dark" style="border: 1px black solid">
+                <thead style="border: 1px black solid">
+                    <tr style="border: 1px black solid">
+                        <th style="border: 1px black solid">
+                            Gandhi
+                        </th>
+                        <th style="border: 1px black solid">
+                            Famous World Event
+                        </th>
+                        <th style="border: 1px black solid">
+                            Year
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--ko foreach: tableArray-->
+                    <tr style="border: 1px black solid">
+                        <td style="border: 1px black solid"
+                            data-bind="text: firstCol.textContent, attr: { rowspan: firstCol.rowSpan}"></td>
+
+                        <td style="border: 1px black solid" data-bind="text: secondCol[0].textContent">
+
+                        </td>
+
+                        <td style="border: 1px black solid"
+                            data-bind="text: thirdCol.textContent, attr: { rowspan: thirdCol.rowSpan}">
+                        </td>
+                    </tr>
+                    <!--ko foreach: secondCol-->
+                    <!--ko if: $index() > 0 -->
+                    <tr>
+                        <td style="border: 1px black solid" data-bind="text: textContent"></td>
+                    </tr>
+                    <!--/ko-->
+                    <!--/ko-->
+                    <!--/ko-->
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+    </div>
+</body>
+<script>
+
+    function historicalFactsTableViewModel() {
+
+        var self = this;
+
+        tableArray = [
+            {
+                firstCol: { textContent: "9 years before Gandhi was born.", rowSpan: 1 },
+                secondCol: [{ textContent: "Abraham Lincoln becomes president of USA" }],
+                thirdCol: { textContent: "1860", rowSpan: 1 }
+            },
+            {
+                firstCol: { textContent: "8 years before Gandhi was born.", rowSpan: 2 },
+                secondCol: [{ textContent: "Civil War starts in USA." },
+                { textContent: "USA imposes first Income Tax on its citizens at 3% for anything over 800 Dollars." }
+                ],
+                thirdCol: { textContent: "1861", rowSpan: 2 }
+            }
+        ];
+
+    }
+
+    $(document).ready(function () {
+        ko.applyBindings(new historicalFactsTableViewModel());
+    });
+</script>
+
+</html>
