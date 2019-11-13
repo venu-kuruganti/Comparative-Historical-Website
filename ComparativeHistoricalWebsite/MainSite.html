@@ -27,8 +27,7 @@
             <br>
 
             While we still remember Gandhi to this day, few realize how different the world was when he was alive. My
-            goal is
-            to put these events into perspective so that a new and more enlightening picture of how the world
+            goal is to put these events into perspective so that a new and more enlightening picture of how the world
             was during these old times emerges.
 
             <br>
@@ -56,21 +55,21 @@
                     <!--ko foreach: tableArray-->
                     <tr style="border: 1px black solid;">
                         <td class="align-middle" style="border: 1px black solid"
-                            data-bind="text: firstCol.textContent, attr: { rowspan: firstCol.rowSpan}"></td>
+                            data-bind="html: firstCol.textContent, attr: { rowspan: firstCol.rowSpan}"></td>
 
                         <td class="align-middle" style="border: 1px black solid"
-                            data-bind="text: secondCol[0].textContent">
+                            data-bind="html: secondCol[0].textContent">
 
                         </td>
 
                         <td class="align-middle" style="border: 1px black solid"
-                            data-bind="text: thirdCol.textContent, attr: { rowspan: thirdCol.rowSpan}">
+                            data-bind="html: thirdCol.textContent, attr: { rowspan: thirdCol.rowSpan}">
                         </td>
                     </tr>
                     <!--ko foreach: secondCol-->
                     <!--ko if: $index() > 0 -->
                     <tr>
-                        <td style="border: 1px black solid" data-bind="text: textContent"></td>
+                        <td style="border: 1px black solid" data-bind="html: textContent"></td>
                     </tr>
                     <!--/ko-->
                     <!--/ko-->
@@ -100,7 +99,7 @@
             {
                 firstCol: { textContent: "9 years before Gandhi was born.", rowSpan: 1 },
                 secondCol: [{ textContent: "Abraham Lincoln becomes president of USA" }],
-                thirdCol: { textContent: "1860", rowSpan: 1 }
+                thirdCol: { textContent: "<b>1860</b>", rowSpan: 1 }
             },
             {
                 firstCol: { textContent: "8 years before Gandhi was born.", rowSpan: 2 },
@@ -189,7 +188,7 @@
             {
                 firstCol: { textContent: "Gandhi at 11 years old.", rowSpan: 3 },
                 secondCol: [{ textContent: "The Cologne Cathedral (which is seen in almost 99% pictures of the city) is completed this year! " },
-                { textContent: "Thomas Edison invented and patented the DC Electricity Distribution system due to which people all over the world have electricity and can use everyday conveniences like light bulbs, fans, heaters, air conditioners, laptops, phones, etc. Edison actually researched and invented this to capitalize on his patenting of the light bulb. If you have electricity in your house, it is thanks to him! Before this, the world didn't have usable electricity and everyone likely used oil lamps and candles still. The only electricity available was AC, invented by another famous person, Nikola Tesla." }, { textContent: "The photophone (precursor to modern day cellphones and possibly SMS) was invented by Graham Bell. He sent the world's first telephone message on a beam of light! And you thought SMSing and WhatsApp was a relatively MODERN invention!" }],
+                { textContent: "Thomas Edison invented and patented the DC Electricity Distribution system due to which people all over the world have electricity and can use everyday conveniences like light bulbs, fans, heaters, air conditioners, laptops, phones, etc. Edison actually researched and invented this to capitalize on his patenting of the light bulb. If you have electricity in your house, it is thanks to him! <br/> <br/> Before this, the world didn't have usable electricity and everyone likely used oil lamps and candles still. The only electricity available was AC, invented by another famous person, Nikola Tesla." }, { textContent: "The photophone (precursor to modern day cellphones and possibly SMS) was invented by Graham Bell. He sent the world's first telephone message on a beam of light! And you thought SMSing and WhatsApp was a relatively MODERN invention!" }],
                 thirdCol: { textContent: "1880", rowSpan: 3 }
             },
             {
@@ -205,7 +204,7 @@
             {
                 firstCol: { textContent: "Gandhi at 14 years old. He got married at this age to Kasturba!!! He was just 14 YEARS OLD!!!", rowSpan: 2 },
                 secondCol: [{
-                    textContent: "The Earth Explodes! (Jus' kiddin'!) Krakatoa on a small island in Indonesia erupts in such a forceful manner that the eruption blast circled the entire planet seven times and the booms were heard as far as Ireland and England in Europe. (just measure the distance from UK to Indonesia and see how far it is!) The sky was bathed in an unearthly red glow and the fallout was felt around the world. The force of the eruption created the loudest noise ever recorded: it was heard 4, 653km away on Rodriguez Island in the Indian Ocean and some 4, 800km away in Alice Springs; shock waves travelled around the world seven times; and the force of the blast was some 10, 000 times greater than that of the hydrogen bomb dropped on Hiroshima.The volcano left 36,000 people dead and the survivors battled to cope with tsunamis, further eruptions and superheated ash clouds."
+                    textContent: "The Earth Explodes! (Jus' kiddin'!) Krakatoa on a small island in Indonesia erupts in such a forceful manner that the eruption blast circled the entire planet seven times and the booms were heard as far as Ireland and England in Europe. (just measure the distance from UK to Indonesia and see how far it is!) <br/> <br/> The sky was bathed in an unearthly red glow and the fallout was felt around the world. <br/> <br/>The force of the eruption created the loudest noise ever recorded: it was heard 4, 653km away on Rodriguez Island in the Indian Ocean and some 4, 800km away in Alice Springs; shock waves travelled around the world seven times; and the force of the blast was some 10, 000 times greater than that of the hydrogen bomb dropped on Hiroshima.The volcano left 36,000 people dead and the survivors battled to cope with tsunamis, further eruptions and superheated ash clouds."
                 }, { textContent: "USA Time Zones were created in this year. Until then, the entire country had different times at different places based on the sun's position in the sky." }],
                 thirdCol: { textContent: "1883", rowSpan: 2 }
             },
@@ -247,18 +246,18 @@
             {
                 firstCol: { textContent: "Gandhi at 23 years old and still in London.", rowSpan: 5 },
                 secondCol: [{ textContent: "General Electric, the famous lightbulb and tubelight manufacturer, is established by none other than Thomas Alva Edison." }, { textContent: "Ellis Island near Liberty Island in New York City becomes site of first passage for immigrants coming into USA from Europe." }, { textContent: "J.R.R. Tolkien, the author of world famous fantasy novels The Hobbit and The Lord of The Rings born in England." }, {
-                    textContent: "The Adventures of Sherlock Holmes was first published in this year. Written by Arthur Conan Doyle, it is likely that Gandhi would have heard of him and have even read his stories in the newspaper as he was in UK at that time. Yes, Gandhi was a young man in UK while the author of Sherlock Holmes, Sir Arthur Conan Doyle, was alive and in his prime years writing his novels and short stories!! Since they were both in London at the time, it is even possible that they might have passed each other on the street without the one knowing about the other!"
+                    textContent: "The Adventures of Sherlock Holmes was first published in this year. Written by Arthur Conan Doyle, it is likely that Gandhi would have heard of him and have even read his stories in the newspaper as he was in UK at that time. Yes, Gandhi was a young man in UK while the author of Sherlock Holmes, Sir Arthur Conan Doyle, was alive and in his prime years writing his novels and short stories!! <br/> <br/> Since they were both in London at the time, it is even possible that they might have passed each other on the street without the one knowing about the other!"
                 }, { textContent: "Oliver Hardy born in USA. (of Laurel and Hardy fame)" }],
                 thirdCol: { textContent: "1892", rowSpan: 5 }
             },
             {
-                firstCol: { textContent: "Gandhi at 24 years old.  Gandhi finally leaves UK and travels to South Africa to work in an Indian firm there in April 1893. Less than a month later, in May 1893, he is forcefully ejected from a train due to racial discrimination motivating him to fight for Indian Rights in South Africa, then a British Colony.", rowSpan: 1 },
+                firstCol: { textContent: "Gandhi at 24 years old. <br/> <br/> Gandhi finally leaves UK and travels to South Africa to work in an Indian firm there in April 1893. <br/> <br/> Less than a month later, in May 1893, he is forcefully ejected from a train due to racial discrimination motivating him to fight for Indian Rights in South Africa, then a British Colony.", rowSpan: 1 },
                 secondCol: [{ textContent: "World's first Ferris Wheel or Giant Wheel regularly seen at fairs today, is opened up by George Washington Gale Ferris Jr in America. The contraption was named after him." }],
                 thirdCol: { textContent: "1893", rowSpan: 1 }
             },
             {
                 firstCol: { textContent: "Gandhi at 25 years old and in South Africa", rowSpan: 1 },
-                secondCol: [{ textContent: "Olympic Games were re-created after a 'short' hiatus of 1500 years!" }],
+                secondCol: [{ textContent: "Olympic Games were re-created after a <b><i>short</b></i> hiatus of 1500 years!" }],
                 thirdCol: { textContent: "1894", rowSpan: 1 }
             },
             {
@@ -272,7 +271,7 @@
                 thirdCol: { textContent: "1896", rowSpan: 2 }
             },
             {
-                firstCol: { textContent: "Gandhi at 28 years old. Gandhi returns to South Africa but is nearly killed by an angry mob of Europeans. ", rowSpan: 3 },
+                firstCol: { textContent: "Gandhi at 28 years old. <br><br> Gandhi returns to South Africa but is nearly killed by an angry mob of Europeans. ", rowSpan: 3 },
                 secondCol: [{ textContent: "Salicin, the precursor to the more well known drug aspirin, was invented by Felix Hoffman in Germany. " }, { textContent: "Bram Stoker publishes his most iconic work to date in the genre of horror and fantasy, Dracula. Even today movies are made on his story alone." }, { textContent: "Subhash Chandra Bose, future extremist freedom fighter of India, is born." }],
                 thirdCol: { textContent: "1897", rowSpan: 3 }
             },
@@ -283,13 +282,112 @@
             },
             {
                 firstCol: { textContent: "Gandhi at 30 years old and joins the Boer War! He might have seen Churchill during his time in the war!", rowSpan: 6 },
-                secondCol: [{ textContent: "The Second Boer war starts. Churchill is also involved in it. He might have seen Gandhi during his time in the war!" }, { textContent: "Bayer Company trademarks Aspirin for the first time as over the counter drug, based on Felix Hoffman's research." }, { textContent: "Al Capone, notorious Chicago gangster and upon whom the modern interpretation of a mobster or gangster is based, is born in Garden City, New York." }, { textContent: "First Motion Picture in the world is created in Broadway, USA and sets in 'motion' Motion Pictures making, albeit without sound. Modern day films can be traced back to this first ever film in which appeared a troupe of dogs and cats performing tricks!" }, { textContent: "Ernest Hemingway, famouse American author and author of A Farewell To Arms is born." }, { textContent: "Alfred Hitchcock, famous mystery director and creator of the first horror film (or thriller film!) Psycho, is born in England." }],
+                secondCol: [{ textContent: "The Second Boer war starts. Churchill is also involved in it. He might have seen Gandhi during his time in the war!" }, { textContent: "Bayer Company trademarks Aspirin for the first time as over the counter drug, based on Felix Hoffman's research." }, { textContent: "Al Capone, notorious Chicago gangster and upon whom the modern interpretation of a mobster or gangster is based, is born in Garden City, New York." }, { textContent: "<p style='font-family:Broadway'>First Motion Picture in the world is created in Broadway, USA and sets in 'motion' Motion Pictures making, albeit without sound. Modern day films can be traced back to this first ever film in which appeared a troupe of dogs and cats performing tricks!</p>" }, { textContent: "Ernest Hemingway, famouse American author and author of A Farewell To Arms is born." }, { textContent: "Alfred Hitchcock, famous mystery director and creator of the first horror film (or thriller film!) Psycho, is born in England." }],
                 thirdCol: { textContent: "1899", rowSpan: 6 }
             },
             {
                 firstCol: { textContent: "Gandhi at 31 years old and in the Boer War.", rowSpan: 7 },
                 secondCol: [{ textContent: "Gottlieb Daimler, inventor of the first motor car, dies." }, { textContent: "First submarine created. Propelled by petrol, it was given to the US Navy." }, { textContent: "Frank L. Baum publishes a very famous children's novel, The Wizard of Oz. It would be made into a motion picture just 30 years later!" }, { textContent: "Winston Churchill enters politics for the first time and is elected to House of Commons." }, { textContent: "Oscar Wilde, famous author and who had a rebellious streak, dies." }, { textContent: "Louis Armstrong, famous Jazz singer and musician, is born in USA." }, { textContent: "Etienne Lenoir, inventor of the world's first internal combustion engine which is used in cars all over the world for more than a hundred years, dies." }],
                 thirdCol: { textContent: "1900 turn of the century", rowSpan: 7 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 32 years old.", rowSpan: 2 },
+                secondCol: [{ textContent: "Walt Disney, creator of Disney World and famous movies, is born in USA." }, { textContent: "Queen Victoria, the Queen who made a mark in modern history and had the longest rule at 63 years, dies in UK. The Victorian Era in England and Scotland comes to a close. She is succeeded by her son Prince Edward VII." }],
+                thirdCol: { textContent: "1901", rowSpan: 2 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 34 years old.", rowSpan: 2 },
+                secondCol: [{ textContent: "The Wright Brothers created the world's first aeroplane and took flight opening up the skies to man and opening up international travel on a fast basis." }, { textContent: "My grandfather, Kuruganti Nagalinga Sastry born in this year." }],
+                thirdCol: { textContent: "1903", rowSpan: 2 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 35 years old, founds the Phoenix Settlement some 25 Km from Durban in South Africa.", rowSpan: 1 },
+                secondCol: [{ textContent: "America's first subway train is inaugurated in New York. Until then, trains only ran above ground, even in England." }],
+                thirdCol: { textContent: "1904", rowSpan: 1 }
+            },
+            {
+                firstCol: {
+                    textContent: "Gandhi at 37 years old, organizes Stretcher-Bearer Corps that served during the Zulu uprising. (<b>The Zulu Uprising</b> was later made into an award winning motion picture).<br><br> Gandhi also wrote about how he saw the horrors of war during this uprising when he saw many Englishmen <i>hunt</i> other people rather than wage war. Many other Englishmen whom he talked with felt the same way as he did. <br><br>In this year, he first founded the philosophy of Satyagraha or non- violent protest.", rowSpan: 5
+                },
+                secondCol: [{ textContent: "Rolls Royce company rolls out the first Silver Ghost, an iconic car from the American automobile manufacture" }, { textContent: "Josef Stalin marries Ekaterina in USSR. She dies 3 years later and leaves him a bitter hard and cold man who came to be known as the dictator with an Iron Fist in a Velvet Glove." }, { textContent: "Kellogs, the cornflakes company, was founded in Battle Creek, Michigan in USA." }, { textContent: "San Francisco has its worst earthquake in history, the worst in the whole of USA. The earthquake measured almost 8.3 on the Richter scale and toppled many weak structures killing about 3000 people" }, { textContent: "Prithviraj Kapoor, actor of the first few silent pictures in India is born November 3rd." }],
+                thirdCol: { textContent: "1906", rowSpan: 5 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 39 years old, is arrested for the first time in South Africa for refusing to carry an ID Card which was demeaning to him.", rowSpan: 3 },
+                secondCol: [{ textContent: "Tunguska Event where an unknown fireball exploded over Tunguska in Siberia in the then USSR. Even today, scientists don't know what caused the massive explosion that looked to be a nuclear weapon going off and leaving a crater a few miles wide." }, { textContent: "James Bond creator, Sir Ian Fleming born on 28th of May." }, { textContent: "Don Bradman, Australian cricketer, born this year on August 27th." }],
+                thirdCol: { textContent: "1908", rowSpan: 3 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 40 years old and still in South Africa!", rowSpan: 1 },
+                secondCol: [{ textContent: "Adolf Hitler, now a young man and pursuing Art, moves to Vienna." }],
+                thirdCol: { textContent: "1909", rowSpan: 1 }
+            },
+            {
+                firstCol: {
+                    textContent: "Gandhi at 41 in South Africa, establishes the Tolstoy Farm in South Africa, named after Count Leo Tolstoy. <br><br> He subsisted on fruits alone and walked forty miles a day!", rowSpan: 6
+                },
+                secondCol: [{ textContent: "Alzheimer's Disease first named in medical publications." }, { textContent: "<b>Insulin</b> as related to Diabetes sufferers first named." }, { textContent: "Boy Scouts of America founded. (They were copied in other nations later on, such as India's NDA)" }, { textContent: "Mark Twain dies." }, { textContent: "Mother Teresa is born in Albania!" }, { textContent: "Bonnie Parker (of the Bonnie and Clyde fame) was born. She would rob banks with her partner in crime." }],
+                thirdCol: { textContent: "1910", rowSpan: 6 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 43, still in South Africa.", rowSpan: 2 },
+                secondCol: [{ textContent: "RMS Titanic hits iceberg and sinks in the Atlantic Ocean. " }, { textContent: "Gene Kelly, famous American actor and noted for his dancing, is born" }],
+                thirdCol: { textContent: "1912", rowSpan: 2 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 44 and still in South Africa fighting for Indian Rights. He begins the Great March to gain Indian Rights.", rowSpan: 2 },
+                secondCol: [{ textContent: "Rabindranath Tagore becomes first Asian (and first Indian) awarded the Nobel Prize for literature, 47 years after Alfred Noble creates the Nobel Peace Prize." }, { textContent: "Richard Nixon, future US President (and the first to be impeached!) is born." }],
+                thirdCol: { textContent: "1913", rowSpan: 2 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 45 (he is now middle aged!) and still in South Africa. However, he finally won Rights for Indians in South Africa in the form of the Indian Relief Act and suspends his march. He finally decides to go back to India.", rowSpan: 2 },
+                secondCol: [{ textContent: "The First World War breaks out in Europe. <br> <br> The war was fought between leaders of different European countries who all were related to Queen Victoria of England. In effect, it was actually a <b> family feud </b> that tore apart Europe and caused many men to be killed and countless others to become traumatised. PTSD was first documented in the trenches of World War I and many authors captured their side effects in countless stories later on. <br> <br> Adolf Hitler, Churchill, Stalin, JRR Tolkien and many others serve in the war." }, { textContent: "The first motion picture is released by Charlie Chaplin, <b> Making a Living </b>. It was a silent comedy and marked the beginning of the silent films era. His next motion picture, Kid at Auto Races, marked the first appearance of the lovable tramp character for which he is famous. Later on, he would use current social issues (including World War I and the rise of Adolf Hitler)in his films." }],
+                thirdCol: { textContent: "1914", rowSpan: 2 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 46 finally returns to India to a hero's welcome.", rowSpan: 6 },
+                secondCol: [{ textContent: "World War I ongoing. Many battles fought in Europe between the European super powers." }, { textContent: "Einstein publishes his Theory of Relativity." }, { textContent: "For the first time, man fought against man in the air using Zepplins or flying dirigibles in World War I in Europe. Aeroplanes were still not used in warfare or military settings." }, { textContent: "Famous American Singer Frank Sinatra born in New Jersey." }, { textContent: "Anthony Quinn, famous American actor, is born in Chihuahua, Mexico." }, { textContent: "The first TransContinental Call (or Trunk Call) was placed by Alexander Graham Bell from New York to San Francisco." }],
+                thirdCol: { textContent: "1915", rowSpan: 6 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 47 and in India.", rowSpan: 2 },
+                secondCol: [{ textContent: "Famous American Actor Gregory Peck (The Guns of Navarone, To Kill A Mockingbird, etc.) is born." }, { textContent: "World War I raging on in Europe with many countries declaring war against each other, like Italy declaring war on Germany. Germany also makes first peace proposal to Allied Forces." },],
+                thirdCol: { textContent: "1916", rowSpan: 2 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 48 goes to Champaran to investigate the local farmers condition.", rowSpan: 3 },
+                secondCol: [{ textContent: "One year before the Armistice, German armies retreat across Europe during World War I" }, { textContent: "In Russia… Revolution finds you! Russian Revolution happens and the Tzar is overthrown. Rasputin becomes famous (or notorious) for his charm and spell on the Tzarina and is assassinated. Russia becomes Socialist." }, { textContent: "Arthur C. Clarke, future famous Sci-Fi author, is born" }],
+                thirdCol: { textContent: "1917", rowSpan: 3 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 49 and begins advocating on Farmers' behalf.", rowSpan: 3 },
+                secondCol: [{ textContent: "In the closing days of World War I, the Russian Civil War happens." }, { textContent: "July 18th, Nelson Mandela, famous activist and equal rights campaigner, born in South Africa." }, { textContent: "Nov 11, 1918 at 11:00 AM, Armistice signed in Compiegne, France. World War I was officially coming to a close." }],
+                thirdCol: { textContent: "1918", rowSpan: 3 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 50. He's finally middle-aged! <br><br> Gandhi opposes the Rowlatt Act which gave the British Govt.unlimited powers to do as they please. <br><br> Gandhi loses trust in the British Govt.and starts his freedom struggle.", rowSpan: 3 },
+                secondCol: [{ textContent: "World War I officially ends as The Treaty of Versailles is signed in Versailles, France. Germany was divided up and Austria was given independence." }, { textContent: "Adolf Hitler joins the German Workers' Party which is the precursor to the Nazi Party." }, { textContent: "In Punjab, the Jallianwallah Bagh Massacre happened when unarmed protesters were fired upon by a British General. " }],
+                thirdCol: { textContent: "1919", rowSpan: 3 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 51. He begins the Non-Co-operation Movement in India in his struggle against the British. Thousands join him in his movement. The first sign of a unified India. <br><br> However, he also had many critics who considered him naïve in his call for non - co - operation stating that it would not be effective. <br> <br> They were later proven right!", rowSpan: 1 },
+                secondCol: [{ textContent: "The Nazi Party is formed in Germany by Adolf Hitler. He gets discharged from the Army and forms the now infamous political party in Germany to contest elections. Germany feels betrayed in the Versailles Treaty and finds it humiliating. His supporters grow in number." }],
+                thirdCol: { textContent: "1920", rowSpan: 1 }
+            },
+            {
+                firstCol: { textContent: "Gandhi at 52.", rowSpan: 2 },
+                secondCol: [{ textContent: "Albert Einstein wins the Nobel Prize in Physics. He is in USA so is not affected so greatly by the Nazi movement in Germany." }, { textContent: "Adolf Hitler becomes leader of the Nazi Party and his influence over the people grows day by day. There is deep rooted anger against the Bolsheviks and Jews whom the Nazi Party hated for having betrayed Germany and stabbing her in the back.<br><br> For the first time, he uses the title of Führer, although it was not of Germany but of the Party itself." }],
+                thirdCol: { textContent: "1921", rowSpan: 2 }
+            },
+            {
+                firstCol: { textContent: "", rowSpan: 1 },
+                secondCol: [{ textContent: "" }],
+                thirdCol: { textContent: "", rowSpan: 1 }
+            },
+            {
+                firstCol: { textContent: "", rowSpan: 1 },
+                secondCol: [{ textContent: "" }],
+                thirdCol: { textContent: "", rowSpan: 1 }
             },
             {
                 firstCol: { textContent: "", rowSpan: 1 },
@@ -356,9 +454,6 @@
                 secondCol: [{ textContent: "" }],
                 thirdCol: { textContent: "", rowSpan: 1 }
             }
-
-
-
         ];
 
     }
